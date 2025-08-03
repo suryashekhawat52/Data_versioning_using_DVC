@@ -7,3 +7,4 @@
 7. next dvc remote add -d myremote s3
 8. next do dvc add Profile/ (this will tell dvc to do versioning here and also will put this under .gitignore so that git dont track it further from here)
 9. next we will do dvc commit and dvc push (this will push the data from profile to s3 with data and corresponding info (like id))
+10. Now we make changes to pydata.py to append a new row in data, check changes via dvc status

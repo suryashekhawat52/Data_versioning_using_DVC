@@ -10,8 +10,11 @@ data = {'name': ['Surya','Ashish', 'Vikas'],
 
 df = pd.DataFrame(data)
 
-#creating new version of data
+#adding new row in the data
 
+new_row_loc = {'name': "Deepesh", 'age': 26, 'rank' : 4}
+
+df.loc[len(df.index)] = new_row_loc
 
 
 #creating a folder and then making a directory
