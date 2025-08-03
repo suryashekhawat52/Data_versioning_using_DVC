@@ -16,6 +16,10 @@ new_row_loc = {'name': "Deepesh", 'age': 26, 'rank' : 4}
 
 df.loc[len(df.index)] = new_row_loc
 
+another_new_row = {'name': "Digvijay", 'age': 27, 'rank' : 5}
+
+df.loc[len(df.index)] = another_new_row
+
 
 #creating a folder and then making a directory
 
