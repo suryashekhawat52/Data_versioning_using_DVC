@@ -1,2 +1,9 @@
 1. create a git repo and clone it
 2. create a file and save it in folder with data
+3. do a git add commit push before initializing dvc
+4. do a pip install dvc 
+5. dvc init (creates .dvc, .dvcignore)  
+6. Now we do mkdir s3 (creates a new s3 directory)
+7. next dvc remote add -d myremote s3
+8. next do dvc add Profile/ (this will tell dvc to do versioning here and also will put this under .gitignore so that git dont track it further from here)
+9. next we will do dvc commit and dvc push (this will push the data from profile to s3 with data and corresponding info (like id))
